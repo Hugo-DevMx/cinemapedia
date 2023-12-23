@@ -154,7 +154,7 @@ class _MovieDetails extends StatelessWidget {
           ),
         ),
 
-        _ActorsByMovie(movieId: movie.id.toString()),
+        _ActorsByMovie(movieId: movie.id),
 
         const SizedBox(height: 50),
       ],
@@ -163,7 +163,7 @@ class _MovieDetails extends StatelessWidget {
 }
 
 class _ActorsByMovie extends ConsumerWidget {
-  final String movieId;
+  final int movieId;
 
   const _ActorsByMovie({required this.movieId});
 
